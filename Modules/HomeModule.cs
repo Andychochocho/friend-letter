@@ -9,7 +9,8 @@ namespace FriendLetter
       Get["/"] = _ => {
         LetterVariables myLetterVariables = new LetterVariables
         {
-          Recipient = "Manny"
+          Recipient = "Manny",
+          Sender = "Andy"
         };
         return View["friend-letter.html", myLetterVariables];
       };
