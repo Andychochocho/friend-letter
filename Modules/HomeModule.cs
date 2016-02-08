@@ -10,7 +10,8 @@ namespace FriendLetter
         LetterVariables myLetterVariables = new LetterVariables
         {
           Recipient = "Manny",
-          Sender = "Andy"
+          Sender = "Andy",
+          Places = "Greenland"
         };
         return View["friend-letter.html", myLetterVariables];
       };
